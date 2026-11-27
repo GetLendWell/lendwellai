@@ -1,14 +1,14 @@
 ---
-description: Check that the engineering plugin and every MCP connection work
+description: Check that the engineer plugin and every MCP connection work
 ---
 
-Run a read-only health check of each MCP server from the engineering plugin.
+Run a read-only health check of each MCP server from the engineer plugin.
 
 The servers are: atlassian, notion, posthog, bigquery.
 
 For each server:
 
-1. Find its tools. They are named `mcp__plugin_engineering_<server>__<tool>`.
+1. Find its tools. They are named `mcp__plugin_engineer_<server>__<tool>`.
 2. Call the cheapest read-only tool that proves you are signed in. Good choices:
    - atlassian: get the current user info
    - notion: get the current user (self)

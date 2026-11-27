@@ -4,13 +4,18 @@
     "name": "LendWell"
   },
   "metadata": {
-    "description": "Common AI infrastructure for LendWell, one plugin per role"
+    "description": "Common AI infrastructure for LendWell, one plugin per persona"
   },
   "plugins": [
     {
-      "name": "engineering",
-      "source": "./plugins/engineering",
-      "description": "MCP connections, commands and skills for LendWell engineers",
+      "name": "engineer",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/GetLendWell/lendwellai.git",
+        "path": "plugins/engineer",
+        "ref": "engineer-v0.0.1"
+      },
+      "description": "MCP connections, commands and skills for the LendWell engineer persona",
       "category": "development"
     }
   ]

@@ -1,14 +1,14 @@
-# engineering
+# engineer
 
-The Claude Code plugin for LendWell engineers.
+The Claude Code plugin for the LendWell engineer persona.
 
-It gives you our MCP connections and the `/engineering:test` command.
+It gives you our MCP connections and the `/engineer:test` command.
 
 ## Install
 
 ```
 /plugin marketplace add GetLendWell/lendwellai
-/plugin install engineering@lendwellai
+/plugin install engineer@lendwellai
 ```
 
 Restart Claude Code after installing.
@@ -45,7 +45,7 @@ The other servers use OAuth in the browser. Run `/mcp`, pick each server and sig
 ## Check your setup
 
 ```
-/engineering:test
+/engineer:test
 ```
 
 It calls one read-only tool on every server and prints a pass or fail table.

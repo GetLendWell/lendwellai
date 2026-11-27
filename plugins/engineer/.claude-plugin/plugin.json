@@ -1,0 +1,14 @@
+{
+  "name": "engineer",
+  "version": "0.0.1",
+  "description": "MCP connections, commands and skills for the LendWell engineer persona",
+  "author": {
+    "name": "LendWell"
+  },
+  "repository": "https://github.com/GetLendWell/lendwellai",
+  "keywords": [
+    "lendwell",
+    "engineer",
+    "mcp"
+  ]
+}
