@@ -1,0 +1,17 @@
+{
+  "name": "lendwellai",
+  "owner": {
+    "name": "LendWell"
+  },
+  "metadata": {
+    "description": "Common AI infrastructure for LendWell, one plugin per role"
+  },
+  "plugins": [
+    {
+      "name": "engineering",
+      "source": "./plugins/engineering",
+      "description": "MCP connections, commands and skills for LendWell engineers",
+      "category": "development"
+    }
+  ]
+}
