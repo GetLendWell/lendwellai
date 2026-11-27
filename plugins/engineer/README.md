@@ -25,7 +25,10 @@ BigQuery uses your Google login. Run this once:
 
 ```sh
 gcloud auth application-default login
+gcloud auth application-default set-quota-project lendwell-ie
 ```
+
+The second command tells Google which project to count your API calls against. Without it, some Google APIs fail with "quota exceeded" or "API not enabled".
 
 BigQuery also needs Node.js, because it runs through `npx`.
 
@@ -53,7 +56,9 @@ It calls one read-only tool on every server and prints a pass or fail table.
 ## Troubleshooting
 
 - **A server shows no tools.** Run `/mcp` and sign in to it.
-- **bigquery fails.** Run `gcloud auth application-default login` and check that Node.js is installed.
+- **bigquery fails with `invalid_grant` or `invalid_rapt`.** Your Google login expired. Run `gcloud auth application-default login` again.
+- **bigquery fails with "quota exceeded" or "API not enabled".** Run `gcloud auth application-default set-quota-project lendwell-ie`.
+- **bigquery fails to start.** Check that Node.js is installed.
 - **You see every tool twice.** The same server is also on in your claude.ai connectors. Turn one of them off.
 
 ## Not included yet
