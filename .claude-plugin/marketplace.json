@@ -13,7 +13,7 @@
         "source": "git-subdir",
         "url": "https://github.com/GetLendWell/lendwellai.git",
         "path": "plugins/engineer",
-        "ref": "engineer-v0.0.1"
+        "ref": "engineer-v0.0.2"
       },
       "description": "MCP connections, commands and skills for the LendWell engineer persona",
       "category": "development"
